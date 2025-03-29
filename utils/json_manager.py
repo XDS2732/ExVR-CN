@@ -3,7 +3,7 @@ import json
 def load_json(file_path):
     # Load a JSON file and return the data.
     try:
-        with open(file_path, "r") as file:
+        with open(file_path, "r",encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
